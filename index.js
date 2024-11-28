@@ -49,7 +49,7 @@ if (!fs.existsSync(notesDir)) {
 
 app.use(express.json()); 
 app.use(express.urlencoded({ extended: true }));
-// Роут для Swagger UI
+
 app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 /**
